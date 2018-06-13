@@ -11,8 +11,8 @@ jobs:
       - run: wget -qO - http://bit.ly/jasmin-deb-repo | bash
       - run: apt-get -y install python-jasmin
       - run: rm -f /etc/jasmin/store/*
-      - run: cp store/* /etc/jasmin/store/
-      - run: cat /etc/jasmin/store/jcli-prod.smppccs
+#      - run: cp store/* /etc/jasmin/store/
+#      - run: cat /etc/jasmin/store/jcli-prod.smppccs
 workflows:
   version: 2
   build_and_configure:
